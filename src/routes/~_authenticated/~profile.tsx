@@ -11,7 +11,7 @@ import { SkillsCard } from "./components/profile-editor/skills-card";
 import { useUserStore } from "./store";
 import useUser from "@/hooks/useUser";
 import { getLoggedInUserID, removeLoggedInUser } from "@/lib/user-auth";
-import { useEffect } from "react";
+
 
 export const Route = createFileRoute("/_authenticated/profile")({
   component: ProfileSection,
