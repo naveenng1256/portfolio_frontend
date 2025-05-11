@@ -13,6 +13,17 @@ export default defineConfig({
     },
   },
   server: {
+    host: "0.0.0.0",
     port: 8080,
+  },
+  // Add the allowed hosts
+  server: {
+    allowedHosts: [
+      'portfolio-frontend-3.onrender.com',
+      // You can add localhost for development
+      'localhost',
+      '127.0.0.1'
+    ]
   }
+
 });
